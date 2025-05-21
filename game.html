@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Horse Racing</title>
+	<link rel="stylesheet" href="game.css"  />
+	
+</head>
+
+<body>
+
+	<!-- Pantalla de bienvenida -->
+	<div id="welcome-screen">
+		<div class="welcome-content">
+			<h1>Carreras de Caballos</h1>
+			<h2>Proyecto de Geometría Computacional</h2>
+			<div class="creators">
+				<p>Creado por:</p>
+				<p>Francisco Javier Ruiz</p>
+				<p>Christiam Alfonso Reyes</p>
+			</div>
+			<button id="start-game-btn">Comenzar el Juego</button>
+		</div>
+	</div>
+
+
+
+<div id="game-content">
+
+	<div id="scroll">
+
+		<div class="track">
+
+
+			<div id="horse1" class="horse standRight">
+				<div class="rider">
+					<div class="head">
+					</div>
+
+					<div class="body">
+					</div>
+				</div>
+			</div>
+
+
+			<div id="horse2" class="horse standRight">
+				<div class="rider">
+					<div class="head">
+					</div>
+
+					<div class="body">
+					</div>
+				</div>
+			</div>
+
+
+			<div id="horse3" class="horse standRight">
+				<div class="rider">
+					<div class="head">
+					</div>
+
+					<div class="body">
+					</div>
+				</div>
+			</div>
+
+
+			<div id="horse4" class="horse standRight">
+				<div class="rider">
+					<div class="head">
+					</div>
+
+					<div class="body">
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="bush jump1"></div>
+			<div class="bush jump2"></div>
+			<div class="bush jump3"></div>
+			<div class="bush jump4"></div>
+			<div class="bush jump5"></div>
+			<div class="bush jump6"></div>
+			<div id="finishline">
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="inner">
+		<div id="start">
+			Comenzar Carrera
+		</div>
+
+		<div id="bet">
+			<p>Tienes actualmente <span id="funds">100</span></p>
+			<label>Selecciona una cantidad ($)</label>
+			<input id="amount" />
+			<label>Escoje un caballo:</label>
+			<select id="bethorse">
+				<option value="horse1">Blanco</option>
+				<option value="horse2">Azul</option>
+				<option value="horse3">Verde</option>
+				<option value="horse4">Marron</option>
+			</select>
+		</div>
+
+		<img src="images/tree.png" class="tree" />
+
+
+
+		<table id="results">
+			<thead>
+				<tr>
+					<th>Resultados</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1st</td>
+				<td class="horse1"></td>
+			</tr>
+			<tr>
+				<td>2nd</td>
+				<td class="horse2"></td>
+			</tr>
+			<tr>
+				<td>3rd</td>
+				<td class="horse3"></td>
+			</tr>
+			<tr>
+				<td>4th</td>
+				<td class="horse4"></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="race-results" style="display: none;">
+		<div class="results-container">
+			<h2>Resultados de la Carrera</h2>
+			<div id="final-results"></div>
+			<button id="play-again-btn">Jugar Otra Carrera</button>
+		</div>
+	</div>
+</div>
+<script src="game.js" defer></script>
+</body>
+
+</html>
